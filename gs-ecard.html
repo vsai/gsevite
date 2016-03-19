@@ -30,41 +30,16 @@
     #flipbook_container .previous-button {
       padding-top: 300px;
       float: right;
-      /*height: 171px;*/
-      /*background-position: -4px 69.5px;*/
-      /*padding: 50px;*/
     }
     #flipbook_container .next-button {
       padding-top: 300px;
       float: left;
-      /*height: 171px;*/
-      /*background-position: -38px 69.5px;*/
-      /*padding: 50px;*/
     }
-    /*#flipbook_container .previous-button-hover,
-    #flipbook_container .previous-button-down {
-      background-image:url(./pics/arrows.png);
-      background-color:pink;
-      background-position: -4px 284px;
-      background-repeat:no-repeat;
-    }
-    #flipbook_container .next-button-hover,
-    #flipbook_container .next-button-down {
-      background-image:url(./pics/arrows.png);
-      background-color:pink;
-      background-position: -38px 284px;
-      background-repeat:no-repeat;
-    }*/
-
     body {
       background-color: rgb(34, 34, 34);
       padding-top: 20px;
       vertical-align: middle;
     }
-    /*.row {
-      padding-top: 20px;
-      vertical-align: middle;
-    }*/
   </style>
 </head>
 <body class="preload" style="display:none;">
@@ -98,7 +73,7 @@
         <div class="hard"></div>
       </div>
     </div>
-    <div class="col-xs-1 col-md-1" style="vertical-align: middle;">
+    <div class="col-xs-1 col-md-1">
       <div ignore="1" class="next-button">
         <img src="./pics/arrows_right.png">
       </div>
@@ -120,33 +95,12 @@
     $('.previous-button').click(function() {
       $('#flipbook').turn('previous');
     });
-    // $('.previous-button').bind($.mouseEvents.over, function() {
-    //   $(this).addClass('previous-button-hover');
-    // }).bind($.mouseEvents.out, function() {
-    //   $(this).removeClass('previous-button-hover');
-    // }).bind($.mouseEvents.down, function() {
-    //   $(this).addClass('previous-button-down');
-    // }).bind($.mouseEvents.up, function() {
-    //   $(this).removeClass('previous-button-down');
-    // }).click(function() {
-    //   $('#flipbook').turn('previous');
-    // });
 
     // Events for the next button
     $('.next-button').click(function() {
       $('#flipbook').turn('next');
     });
-    // $('.next-button').bind($.mouseEvents.over, function() {
-    //   $(this).addClass('next-button-hover');
-    // }).bind($.mouseEvents.out, function() {
-    //   $(this).removeClass('next-button-hover');
-    // }).bind($.mouseEvents.down, function() {
-    //   $(this).addClass('next-button-down');
-    // }).bind($.mouseEvents.up, function() {
-    //   $(this).removeClass('next-button-down');
-    // }).click(function() {
-    //   $('#flipbook').turn('next');
-    // });
+
   $(document).ready(function() {
     $('body').removeClass('preload');
     $('body').show();
